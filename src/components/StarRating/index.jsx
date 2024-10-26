@@ -7,31 +7,37 @@ const StartRating = ({ total = 10, value = 0 }) => {
   const [selectedStar, setSelectedStar] = useState(null);
 
   const onHover = (event) => {
-    console.log("onHover", event.target.getAttribute("data-star-id"));
-    setSelectedStar(event.target.getAttribute("data-star-id"))
+    console.log("onHover", );
+    let val = null;
+    if(event && event.target && event.target.getAttribute("data-star-id")){
+      val = event.target.getAttribute("data-star-id");
+    }
+
+    setSelectedStar(val)
   };
 
-  const onClick = (event) => {
-    setSelectedStar(null);
-    // setSelectedStar(event.target.getAttribute("data-star-id"))
-    setRating(event.target.getAttribute("data-star-id"))
-  }
+  // const onClick = (event) => {
+  //   // setSelectedStar(null);
+  //   // setSelectedStar(event.target.getAttribute("data-star-id"))
+  //   setRating(event.target.getAttribute("data-star-id"))
+  // }
 
-  const onMouseRemove = () => {
-    setSelectedStar(null);
-  }
+  // const onMouseRemove = () => {
+  //   // setSelectedStar(null);
+  // }
 
   return (
-    <div style={{display:"flex", justifyContent:"center", alignItems:"center", gap:5}}>
+    <div onMouseLeave={() => onHover(null)}
+    onMouseOver={onHover}
+    onClick={(e) =>
+      setRating(e.target.getAttribute("data-star-id") || rating)
+    }>
       {Array.from({ length: total }, (_, index) => {
         return (
           <Star
-            onHover={onHover}
-            key={index}
-            onMouseRemove={onMouseRemove}
-            onClick={onClick}
-            marked={selectedStar && selectedStar >= index + 1 ? true : false || rating >= index + 1 ? true : false}
+            marked={selectedStar ? selectedStar >= index + 1 : rating >= index + 1}
             starId={index + 1}
+            key={`star_${index}`}
           />
         );
       })}
@@ -39,21 +45,28 @@ const StartRating = ({ total = 10, value = 0 }) => {
   );
 };
 
-const Star = ({ marked, starId, onHover, onClick, onMouseRemove}) => {
+// const Star = ({ marked, starId, onClick}) => {
+//   return (
+//     <div
+//       onClick={onClick}
+//       style={{
+//         height: 10,
+//         width: 10,
+//         backgroundColor: marked ? "green" : "white",
+//         border: "1px solid black",
+//       }}
+//       data-star-id={starId}
+//     ></div>
+//   );
+// };
+
+const Star = ({ marked, starId }) => {
   return (
-    <div
-      onMouseOver={onHover}
-      onClick={onClick}
-      onMouseLeave={onMouseRemove}
-      style={{
-        height: 10,
-        width: 10,
-        backgroundColor: marked ? "green" : "white",
-        border: "1px solid black",
-      }}
-      data-star-id={starId}
-    ></div>
+    <span data-star-id={starId} style={{cursor:"pointer"}} className="star" role="button">
+      {marked ? "\u2605" : "\u2606"}
+    </span>
   );
 };
+
 
 export default StartRating;

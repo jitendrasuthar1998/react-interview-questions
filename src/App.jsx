@@ -22,8 +22,8 @@ function App() {
       {/* <CounterTimer/>
       <CountDownTimer/>
       <Pagination/> */}
-      {/* <StartRating/> */}
-      <Demo/>
+      <StartRating/>
+      {/* <Demo/> */}
     </div>
   )
 }

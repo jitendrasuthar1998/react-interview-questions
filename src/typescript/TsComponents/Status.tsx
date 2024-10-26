@@ -1,5 +1,8 @@
 import React from 'react'
 
+// union type
+// status can only be one of them (loading, success, error)
+
 type StatusProps = {
     status: "loading" | "success" | "error";
 }
