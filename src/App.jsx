@@ -7,6 +7,8 @@ import ContextApp from "./context/ContextApp"
 import UserApp from "./context/UserApp"
 import CountDownTimer from "./components/CountDownTimer"
 import Pagination from "./components/Pagination"
+import StartRating from "./components/StarRating"
+import Demo from "./typescript/Demo"
 
 
 function App() {
@@ -17,9 +19,11 @@ function App() {
       {/* <ContextApp/> */}
       {/* <UserApp/> */}
       {/* <WindowResize/> */}
-      <CounterTimer/>
+      {/* <CounterTimer/>
       <CountDownTimer/>
-      <Pagination/>
+      <Pagination/> */}
+      {/* <StartRating/> */}
+      <Demo/>
     </div>
   )
 }
