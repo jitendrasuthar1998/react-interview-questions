@@ -9,6 +9,8 @@ import CountDownTimer from "./components/CountDownTimer"
 import Pagination from "./components/Pagination"
 import StartRating from "./components/StarRating"
 import Demo from "./typescript/Demo"
+import InfiniteScroll from "./components/InfiniteScroll"
+import WindowScroll from "./components/InfiniteScroll/WindowScroll"
 
 
 function App() {
@@ -22,7 +24,9 @@ function App() {
       {/* <CounterTimer/>
       <CountDownTimer/>
       <Pagination/> */}
-      <StartRating/>
+      {/* <StartRating/> */}
+      <InfiniteScroll/>
+      {/* <WindowScroll/> */}
       {/* <Demo/> */}
     </div>
   )
