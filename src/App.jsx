@@ -11,6 +11,7 @@ import StartRating from "./components/StarRating"
 import Demo from "./typescript/Demo"
 import InfiniteScroll from "./components/InfiniteScroll"
 import WindowScroll from "./components/InfiniteScroll/WindowScroll"
+import Autocomplete from "./components/AutoComplete"
 
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
       <CountDownTimer/>
       <Pagination/> */}
       {/* <StartRating/> */}
-      <InfiniteScroll/>
+      {/* <InfiniteScroll/> */}
+      <Autocomplete/>
       {/* <WindowScroll/> */}
       {/* <Demo/> */}
     </div>
