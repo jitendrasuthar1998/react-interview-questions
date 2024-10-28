@@ -12,6 +12,7 @@ import Demo from "./typescript/Demo"
 import InfiniteScroll from "./components/InfiniteScroll"
 import WindowScroll from "./components/InfiniteScroll/WindowScroll"
 import Autocomplete from "./components/AutoComplete"
+import TrafficLight from "./TrafficLight"
 
 
 function App() {
@@ -27,9 +28,10 @@ function App() {
       <Pagination/> */}
       {/* <StartRating/> */}
       {/* <InfiniteScroll/> */}
-      <Autocomplete/>
+      {/* <Autocomplete/> */}
       {/* <WindowScroll/> */}
       {/* <Demo/> */}
+      <TrafficLight/>
     </div>
   )
 }

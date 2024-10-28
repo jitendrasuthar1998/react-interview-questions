@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
 import { contacts } from "../InfiniteScroll/contactsData";
 import { Contact } from "../InfiniteScroll/contacts.types";
 
+// Search => Input => Search Result => List
+
+// Debounce
+
+
+
 const AutoComplete = () => {
   const [searchText, setSearchText] = useState("");
 
@@ -13,9 +19,7 @@ const AutoComplete = () => {
 
   useEffect(()=> {
     if(searchText){
-        const debouncing = setTimeout(()=> {
-            handleSearchResult();
-        }, 500)
+        const debouncing = setTimeout(handleSearchResult, 500)
     
         return () => {
             console.log("clearing timeout");
@@ -30,7 +34,7 @@ const AutoComplete = () => {
         //   contact.name.startsWith(event.target.value)
         contact.name.toLowerCase().includes(searchText.toLowerCase())
       );
-      setSearchResult(result);
+    setSearchResult(result);
   };
 
   useEffect(() => {
