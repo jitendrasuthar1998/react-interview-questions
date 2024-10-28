@@ -8,7 +8,7 @@ import UserApp from "./context/UserApp"
 import CountDownTimer from "./components/CountDownTimer"
 import Pagination from "./components/Pagination"
 import StartRating from "./components/StarRating"
-import Demo from "./typescript/Demo"
+import TypeScriptDemo from "./typescript/Demo"
 import InfiniteScroll from "./components/InfiniteScroll"
 import WindowScroll from "./components/InfiniteScroll/WindowScroll"
 import Autocomplete from "./components/AutoComplete"
@@ -30,8 +30,8 @@ function App() {
       {/* <InfiniteScroll/> */}
       {/* <Autocomplete/> */}
       {/* <WindowScroll/> */}
-      {/* <Demo/> */}
-      <TrafficLight/>
+      <TypeScriptDemo/>
+      {/* <TrafficLight/> */}
     </div>
   )
 }

@@ -8,8 +8,10 @@ import Oscar from "./TsComponents/Oscar";
 import Button from "./TsComponents/Button";
 import Input from "./TsComponents/Input";
 import Container from "./TsComponents/Container";
+import LoggedIn from "./TsComponents/LoggedIn";
+import User from "./TsComponents/User";
 
-const Demo = () => {
+const TypeScriptDemo = () => {
   const personName = {
     first: "John",
     last: "Doe",
@@ -22,7 +24,7 @@ const Demo = () => {
   ];
 
   return (
-    <div>
+    <div style={{display:"flex", flexDirection:"column", gap:5}}>
       {/* React component with props types */}
       <Greet name="Hello world from Demo" messageCount={10} isLoggedIn={true} />
 
@@ -77,8 +79,12 @@ const Demo = () => {
           height: 30,
         }}
       />
+
+      <LoggedIn/>
+
+      <User/>
     </div>
   );
 };
 
-export default Demo;
+export default TypeScriptDemo;

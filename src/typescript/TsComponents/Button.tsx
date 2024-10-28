@@ -7,7 +7,7 @@ type ButtonProps = {
 
 const Button = (props:ButtonProps) => {
   return (
-    <button onClick={props.handleClick}></button>
+    <button onClick={props.handleClick}>Click Me</button>
   )
 }
 
