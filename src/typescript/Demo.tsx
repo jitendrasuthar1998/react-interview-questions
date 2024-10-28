@@ -10,6 +10,7 @@ import Input from "./TsComponents/Input";
 import Container from "./TsComponents/Container";
 import LoggedIn from "./TsComponents/LoggedIn";
 import User from "./TsComponents/User";
+import Counter from "./TsComponents/Counter";
 
 const TypeScriptDemo = () => {
   const personName = {
@@ -83,6 +84,8 @@ const TypeScriptDemo = () => {
       <LoggedIn/>
 
       <User/>
+
+      <Counter/>
     </div>
   );
 };
