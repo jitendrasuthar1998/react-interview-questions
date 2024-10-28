@@ -11,6 +11,7 @@ import Container from "./TsComponents/Container";
 import LoggedIn from "./TsComponents/LoggedIn";
 import User from "./TsComponents/User";
 import Counter from "./TsComponents/Counter";
+import ThemeApp from "./tsContext/ThemeApp";
 
 const TypeScriptDemo = () => {
   const personName = {
@@ -86,6 +87,8 @@ const TypeScriptDemo = () => {
       <User/>
 
       <Counter/>
+
+      <ThemeApp/>
     </div>
   );
 };
