@@ -14,7 +14,7 @@ const getPaginatedContacts = async() => {
 
 useEffect(()=> {
     getPaginatedContacts()
-},[number])
+},[number ])
 
     const buttonNumbers = [1,2,3,4,5];
 
@@ -27,7 +27,7 @@ useEffect(()=> {
 }
 
     {
-        buttonNumbers.map((item)=> <button onClick={()=> setNumber(item)}>{item}</button>)
+        buttonNumbers.map((item)=> <button key={item} onClick={()=> setNumber(item)}>{item}</button>)
     }
     </div>
   )

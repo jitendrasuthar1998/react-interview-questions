@@ -11,13 +11,13 @@ function getContacts(pageNumber, pageSize = 10){
 
 }
 
-function pagination(pageNumber){
-   return new Promise((res, rej) => {
+// function pagination(pageNumber){
+//    return new Promise((res, rej) => {
         
-        setTimeout(()=> {
-            res(getContacts(pageNumber))
-        }, 1000)
-    })
-}
+//         setTimeout(()=> {
+//             res(getContacts(pageNumber))
+//         }, 1000)
+//     })
+// }
 
-export default pagination;
+export default getContacts;

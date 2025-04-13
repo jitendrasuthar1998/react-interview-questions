@@ -63,7 +63,7 @@ export default function InfiniteScroll() {
             </div>
           );
         } else {
-          return (
+          return ( 
             <div
               key={index}
               style={{ padding: "20px", border: "1px solid #ccc" }}

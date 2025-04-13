@@ -1,18 +1,34 @@
 import './App.css'
-import CounterTimer from "./components/CounterTimer"
-import Counter from './components/Counter'
-import Parent from './components/Parent'
-import WindowResize from "./components/WindowResize"
-import ContextApp from "./context/ContextApp"
-import UserApp from "./context/UserApp"
-import CountDownTimer from "./components/CountDownTimer"
-import Pagination from "./components/Pagination"
-import StartRating from "./components/StarRating"
-import TypeScriptDemo from "./typescript/Demo"
-import InfiniteScroll from "./components/InfiniteScroll"
-import WindowScroll from "./components/InfiniteScroll/WindowScroll"
-import Autocomplete from "./components/AutoComplete"
-import TrafficLight from "./TrafficLight"
+import Boxes from "./components/Boxes";
+import Calculator from "./components/Calculator";
+import Callback from "./components/Callback";
+// import CounterTimer from "./components/CounterTimer"
+// import Interval from './procoddr/Interval';
+// import Parent from './components/Parent'
+// import WindowResize from "./components/WindowResize"
+// import ContextApp from "./context/ContextApp"
+// import UserApp from "./context/UserApp"
+// import CountDownTimer from "./components/CountDownTimer"
+// import Pagination from "./components/Pagination"
+// import StarRating from "./components/StarRating/Star"
+// import TypeScriptDemo from "./typescript/Demo"
+// import InfiniteScroll from "./components/InfiniteScroll"
+// import WindowScroll from "./components/InfiniteScroll/WindowScroll"
+// import Autocomplete from "./components/AutoComplete/AutoComplete"
+// import TrafficLight from "./TrafficLight"
+// import EnhancedDynamicFilter from "./components/DynamicFilter"
+// import CounterWithRef from "./procoddr/CounterWithRef";
+// import ExpenseTracker from "./procoddr/ExpenseTracker";
+
+// import CounterTest from "./components/CountDownTimer/CounterTest";
+// import EventPropagation from "./components/StarRating/EventPropation";
+// import Products from "./components/Pagination/Products";
+import CartApp from "./components/CartApp/CartApp";
+import CustomHookHome from "./components/CustomHook";
+import Form from "./components/Form";
+import NestedComments from "./components/NestedComments";
+import SlotMachine from "./components/SlotMachineGame";
+import ExpenseTracker from "./procoddr/ExpenseTracker";
 
 
 function App() {
@@ -25,13 +41,32 @@ function App() {
       {/* <WindowResize/> */}
       {/* <CounterTimer/>
       <CountDownTimer/>
-      <Pagination/> */}
-      {/* <StartRating/> */}
+       */}
+       {/* <Pagination/> */}
+       {/* <Autocomplete/> */}
+       {/* <EnhancedDynamicFilter/> */}
+      {/* <StarRating/> */}
+      {/* <EventPropagation/> */}
       {/* <InfiniteScroll/> */}
       {/* <Autocomplete/> */}
       {/* <WindowScroll/> */}
-      <TypeScriptDemo/>
+      {/* <TypeScriptDemo/> */}
       {/* <TrafficLight/> */}
+      {/* <Counter/> */}
+      {/* <Interval/> */}
+      {/* <CounterWithRef/> */}
+        {/* <ExpenseTracker/> */}
+        {/* <NestedComments/> */}
+        <Callback/>
+        {/* <CartApp/> */}
+        {/* <CounterTest/> */}
+      {/* <Products/> */}
+      {/* <CartApp/> */}
+      {/* <Form/> */}
+      {/* <SlotMachine/> */}
+      {/* <Calculator/> */}
+        {/* <Boxes/> */}
+        {/* <CustomHookHome/> */}
     </div>
   )
 }

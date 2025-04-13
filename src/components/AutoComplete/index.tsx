@@ -6,8 +6,6 @@ import { Contact } from "../InfiniteScroll/contacts.types";
 
 // Debounce
 
-
-
 const AutoComplete = () => {
   const [searchText, setSearchText] = useState("");
 
@@ -17,23 +15,23 @@ const AutoComplete = () => {
     setSearchText(event.target.value);
   };
 
-  useEffect(()=> {
-    if(searchText){
-        const debouncing = setTimeout(handleSearchResult, 500)
-    
-        return () => {
-            console.log("clearing timeout");
-            clearTimeout(debouncing);
-        }
+  useEffect(() => {
+    if (searchText) {
+      const debouncing = setTimeout(handleSearchResult, 500);
+
+      return () => {
+        console.log("clearing timeout");
+        clearTimeout(debouncing);
+      };
     }
-  },[searchText])
+  }, [searchText]);
 
   const handleSearchResult = () => {
     console.log("handleSearch called");
     let result = contacts.filter((contact) =>
-        //   contact.name.startsWith(event.target.value)
-        contact.name.toLowerCase().includes(searchText.toLowerCase())
-      );
+      //   contact.name.startsWith(event.target.value)
+      contact.name.toLowerCase().includes(searchText.toLowerCase())
+    );
     setSearchResult(result);
   };
 

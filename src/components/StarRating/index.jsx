@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from "react";
+import  { useState } from "react";
 
 const StartRating = ({ total = 10, value = 0 }) => {
   
@@ -40,7 +40,8 @@ const StartRating = ({ total = 10, value = 0 }) => {
             key={`star_${index}`}
           />
         );
-      })}
+      }
+      )}
     </div>
   );
 };
