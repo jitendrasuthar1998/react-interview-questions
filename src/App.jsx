@@ -28,6 +28,7 @@ import CustomHookHome from "./components/CustomHook";
 import Form from "./components/Form";
 import NestedComments from "./components/NestedComments";
 import SlotMachine from "./components/SlotMachineGame";
+import TodoListWithDynamicUpdate from "./components/TodoListWithDynamicUpdate";
 import ExpenseTracker from "./procoddr/ExpenseTracker";
 
 
@@ -57,7 +58,8 @@ function App() {
       {/* <CounterWithRef/> */}
         {/* <ExpenseTracker/> */}
         {/* <NestedComments/> */}
-        <Callback/>
+        {/* <Callback/> */}
+        <TodoListWithDynamicUpdate/>
         {/* <CartApp/> */}
         {/* <CounterTest/> */}
       {/* <Products/> */}
